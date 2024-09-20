@@ -44,17 +44,17 @@ body {
 
 
 .slide:first-child {
-  background: url("Photo1.png") no-repeat
+  background: url("Mgt1_step1.gif") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url("Gif1.webp") no-repeat
+  background: url("Mgt1_step2.gif") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url("Gif2.gif") no-repeat
+  background: url("Mgt1_step3.gif") no-repeat
     center top/cover;
 }
 
@@ -131,8 +131,6 @@ body {
   <!-- partial:index.partial.html -->
   <div class="slider">
     <div class="slide current"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
