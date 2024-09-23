@@ -44,28 +44,41 @@ body {
 
 
 .slide:first-child {
-  background: url("Mgt1_step1.gif") no-repeat
+  background: url("Mgt1_transition1.png") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(2) {
-  background: url("Mgt1_step2.gif") no-repeat
+  background: url("Mgt1_step1_v2.gif") no-repeat
     center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url("Mgt1_step3.gif") no-repeat
+  background: url("Mgt1_transition2.png") no-repeat
     center top/cover;
 }
 
   }
 
 .slide:nth-child(4) {
-  background: url("Gif1.webp") no-repeat
+  background: url("Mgt1_step2_v2.gif") no-repeat
     center top/cover;
 }
 
+  .slide:nth-child(5) {
+  background: url("Mgt1_transition3.png") no-repeat
+    center top/cover;
+}
 
+  .slide:nth-child(6) {
+  background: url("Mgt1_step3_v2.gif") no-repeat
+    center top/cover;
+}
+
+    .slide:nth-child(6) {
+  background: url("Mgt1_step4_v2.gif") no-repeat
+    center top/cover;
+}
 
   
 .buttons button#prev {
@@ -97,9 +110,9 @@ body {
 
 @media (min-width: 640px) and (min-height: 640px) {
   .slide .content {
-    bottom: 70px;
-    left: -600px;
-    width: 600px;
+    bottom: 30px;
+    left: -12800px;
+    width: 1280px;
     padding: 2rem;
     line-height: 1.6;
   }
@@ -109,7 +122,7 @@ body {
   }
 
   .slide.current .content {
-    transform: translateX(600px);
+    transform: translateX(1280px);
   }
 }
 </style>
@@ -119,6 +132,9 @@ body {
   <!-- partial:index.partial.html -->
   <div class="slider">
     <div class="slide current"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
@@ -134,7 +150,7 @@ body {
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 5000;
+    const intervalTime = 8000;
     let slideInterval;
 
     const nextSlide = () => {
